@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    uses: ziad-dourbk/workflows/.github/workflows/build.yml@main
-    with:
+    uses: ./.github/workflows/build.yml
+    secrets:
       username: ${{ secrets.DOCKER_USERNAME }}
       password: ${{ secrets.DOCKER_TOKEN }}
