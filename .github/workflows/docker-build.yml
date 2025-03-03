@@ -12,6 +12,4 @@ on:
 jobs:
   build:
     uses: ziad-dourbk/workflows/.github/workflows/build.yml@main
-    with:
-      dockerfile: ./Dockerfile
-      context: .
+
